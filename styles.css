@@ -1,0 +1,164 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ececec;
+}
+.container{
+  background-color: #ef4444;
+  border-radius: 13px;
+  width: min(90%);
+  display: grid;
+  margin: 0px auto;
+  padding: 20px;
+  grid-template-rows: 120px;
+  height: 530px;
+}
+.display{
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 80px);
+  gap: 6px;
+}
+.rmvBtn:hover{
+  background-color: #ef4444;
+  color: white;
+}
+.book{
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 0px 10px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+::backdrop {
+  opacity: 0.5;
+  transition: all 1s;
+}
+.input-area{
+  display: flex;
+  flex-direction: column;
+}
+dialog{
+  border-radius: 6px;
+  border: none;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.input-area input{
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+}
+
+#lib-h1{
+  font-weight: 600;
+  font-size: 38px;
+  color: white;
+}
+.h1{
+  justify-self: center;
+}
+.upper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+.button{
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #21ab54;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: 0.25s;
+}
+
+img{
+  position: relative;
+  right: 5px;
+}
+.input-area div{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+
+}
+#btn{
+  margin-top: 40px;
+  background-color: #21ab54;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 3px;
+  font-weight: 600;
+}
+button{
+  cursor: pointer;
+}
+.page{
+  font-size: 25px;
+  grid-column: 3 / 4;
+}
+.author{
+  font-size: 26px;
+  grid-column: 2 / 3;
+}
+.title{
+  grid-column: 1 / 2;
+  font-size: 26px;
+}
+.read-btn{
+  grid-column: 4 / 5;
+  justify-self: center;
+  grid-row: 1;
+  padding: 10px 20px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.25s;
+}
+.read-btn-changed{
+  background-color: white;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+label{
+  text-align: center;
+}
+input{
+  border: none;
+  border-bottom: 1px solid;
+}
+.rmvBtn{
+  background-color: #f2dbdb;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.25s;
+  grid-column: 5;
+  width: 20%;
+  justify-self: end;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img:not(#img){
+  height: 25px;
+  width: 25px;
+  position: relative;
+  left: 0.4px;
+}
