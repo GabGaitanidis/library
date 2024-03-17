@@ -145,6 +145,7 @@ input{
   border-bottom: 1px solid;
   width: 86%;
   margin: 0px auto;
+  font-size: 20px;
 }
 .rmvBtn{
   background-color: #f2dbdb;
