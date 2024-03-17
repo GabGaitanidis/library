@@ -14,7 +14,7 @@ body{
   margin: 0px auto;
   padding: 20px;
   grid-template-rows: 120px;
-  height: 530px;
+  height: 630px;
 }
 .display{
   display: grid;
@@ -34,27 +34,30 @@ body{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-::backdrop {
-  opacity: 0.5;
-  transition: all 1s;
-}
+
 .input-area{
   display: flex;
   flex-direction: column;
 }
 dialog{
-  border-radius: 6px;
+  border-radius: 10px;
   border: none;
   padding: 20px;
   background-color: #ffffff;
+  text-align: center;
+  width: 250px;
+  border: 5px solid #ef4444;
+  /* box-shadow: 3px 3px 5px rgb(230, 230, 230); */
 }
 .input-area input{
-  border: 1px solid;
-  border-radius: 5px;
   background-color: transparent;
   outline: none;
+  border: none;
+  border-bottom: 1px solid;
 }
-
+label{
+  font-size: 20px;
+}
 #lib-h1{
   font-weight: 600;
   font-size: 38px;
@@ -80,7 +83,7 @@ dialog{
   font-weight: 600;
   display: flex;
   align-items: center;
-  transition: 0.25s;
+  transition: all 0.25s;
 }
 
 img{
@@ -95,8 +98,7 @@ img{
 }
 #btn{
   margin-top: 40px;
-  background-color: #21ab54;
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 7px;
   font-size: 20px;
@@ -141,6 +143,8 @@ label{
 input{
   border: none;
   border-bottom: 1px solid;
+  width: 86%;
+  margin: 0px auto;
 }
 .rmvBtn{
   background-color: #f2dbdb;
@@ -161,4 +165,13 @@ img:not(#img){
   width: 25px;
   position: relative;
   left: 0.4px;
+}
+::backdrop{
+  background-color: gainsboro;
+  opacity: 0.2;
+}
+#dia-img{
+  position: relative;
+  top: 4px;
+  right: 5px;
 }
